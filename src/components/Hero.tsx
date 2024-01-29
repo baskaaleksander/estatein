@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
         <h1 className='text-white-0 text-6xl leading-[72px]'>Discover Your Dream Property with Estatein</h1>
         <p className='text-grey-60 font-medium'>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
         <div className='py-12'>
-            <button className='font-medium text-white-0 px-6 py-3.5 border border-solid border-grey-15 rounded-xl'>Learn more</button>
+            <button className='font-medium text-white-0 px-6 py-3.5 border border-solid border-grey-15 rounded-xl mr-5'>Learn more</button>
             <button className='font-medium text-white-0 px-6 py-3.5 bg-purple-60 rounded-xl'>Browse Properties</button>
         </div>
         <div className='grid grid-cols-3 gap-5 py-13' >
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
         </div>
         </div>
         <div className='flex hero-right'>
-            <img src={heroimg} alt="heroimg" className='self-stretch'/>
+            <img src={heroimg} alt="heroimg" className='self-stretch hero-img'/>
         </div>
     </div>
   )

@@ -1,32 +1,43 @@
 interface RealEstateListing {
-    id: string;
     title: string;
-    address: string;
-    city: string;
-    state: string;
-    price: number;
-    saleType: string;
-    bedrooms: number;
-    bathrooms: number;
-    area: number;
+    description: string;
     image: string;
-    thumbnail: string;
-    favorite: boolean;
+    price: number;
+    bathrooms: number;
+    bedrooms: number;
+    type: string;
+    link: string;
 }
 
 export const listings: RealEstateListing[] = [
     {
-        id: '1',
-        title: 'Luxury Villa',
-        address: '1234 Main St',
-        city: 'San Diego',
-        state: 'CA',
-        price: 1500000,
-        saleType: 'For Sale',
-        bedrooms: 5,
+        title: 'Przykładowa nieruchomość 1',
+        description: 'Opis przykładowej nieruchomości 1',
+        image: 'url_do_obrazka1.jpg',
+        price: 500000,
+        bathrooms: 2,
+        bedrooms: 3,
+        type: 'dom',
+        link: 'www.przykladowy_link1.com'
+    },
+    {
+        title: 'Przykładowa nieruchomość 2',
+        description: 'Opis przykładowej nieruchomości 2',
+        image: 'url_do_obrazka2.jpg',
+        price: 750000,
         bathrooms: 3,
-        area: 3500,
-        image: 'https://via.placeholder.com/350x250',
-        thumbnail: 'https://via.placeholder.com/150x150',
-        favorite: false
-    }];
+        bedrooms: 4,
+        type: 'mieszkanie',
+        link: 'www.przykladowy_link2.com'
+    },
+    {
+        title: 'Przykładowa nieruchomość 3',
+        description: 'Opis przykładowej nieruchomości 3',
+        image: 'url_do_obrazka3.jpg',
+        price: 1000000,
+        bathrooms: 4,
+        bedrooms: 5,
+        type: 'willa',
+        link: 'www.przykladowy_link3.com'
+    }
+];

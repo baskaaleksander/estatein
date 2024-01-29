@@ -33,6 +33,10 @@ export default {
     fontFamily: {
       'main': ['Urbanist', 'sans-serif'],
     },
+    boxShadow: {
+      'card': '0px 0px 0px 10px #191919',
+    },
+
     
   },
   plugins: [],
