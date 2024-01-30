@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import FeaturedCard from "./FeaturedCard"
 import { listings } from "../assets/realEstateListings"
+import arrowleft from '../assets/arrowleft.svg'
+import arrowright from '../assets/arrowright.svg'
 
 const FeaturedProperties: React.FC = () => {
 
@@ -46,12 +48,15 @@ const FeaturedProperties: React.FC = () => {
             <button className="px-6 py-4 bg-grey-10 text-white-0 rounded-xl border border-solid border-grey-15 text-lg">View All Properties</button>
             
         </div>
-        <div>
+        <div className="grid grid-cols-3 gap-6 my-12">
             {contentArray}
         </div>
-        <div>
-          <p>{display + 1} of {Math.ceil(listings.length / 3)}</p>
-          
+        <div className="flex justify-between">
+          <p className="text-lg text-white-0">{display + 1} <span className="text-grey-60">of {Math.ceil(listings.length / 3)}</span></p>
+          <div>
+          <button onClick={() => setDisplay(display - 1)} disabled={display === 0}><img src={arrowleft} alt="arrow left"/></button>
+          <button onClick={() => setDisplay(display + 1)} disabled={display === Math.ceil(listings.length / 3) - 1}><img src={arrowright} alt="arrow right" /></button>
+          </div>
         </div>
     </div>
   )
