@@ -25,14 +25,14 @@ const FeaturedCard = ({title, description, image, price, bathrooms, bedrooms, ty
       {type}
       {link} */}
       <img src={image} alt={title} className="w-full rounded-lg" />
-      <div className="">
+      <div className="mt-8">
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="text-lg text-grey-60">{description}</p>
       </div>
-      <div>
-        <p className="text-lg inline px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15"><img src={bedroomicon} className='inline ' alt='bedroomicon'/> {bedrooms}-Bedroom</p>
-        <p className='text-lg inline px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15'><img src={bathroomicon} className='inline' alt='bathroomsicon' /> {bathrooms}-Bathroom</p>
-        <p className="text-lg inline px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15"><img src={typeicon} className='inline' alt='type icon.' /> {type}</p>
+      <div className='flex my-8'>
+        <p className="text-lg mr-2 px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15"><img src={bedroomicon} className='inline ' alt='bedroomicon'/> {bedrooms}-Bedroom</p>
+        <p className='text-lg mr-2 px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15'><img src={bathroomicon} className='inline' alt='bathroomsicon' /> {bathrooms}-Bathroom</p>
+        <p className="text-lg mr-2 px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15"><img src={typeicon} className='inline' alt='type icon.' /> {type}</p>
       </div>
       
       <div className='grid grid-cols-2'>

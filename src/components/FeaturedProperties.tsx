@@ -22,7 +22,7 @@ const FeaturedProperties: React.FC = () => {
   const [display, setDisplay] = useState(0)
 
   useEffect(() => {
-    setCards(listings.slice(display, display + 3))
+    setCards(listings.slice(display * 3, (display * 3) + 3))
   }, [display])
   const contentArray = cards.map((card, index) => {
     return (
@@ -51,11 +51,11 @@ const FeaturedProperties: React.FC = () => {
         <div className="grid grid-cols-3 gap-6 my-12">
             {contentArray}
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <p className="text-lg text-white-0">{display + 1} <span className="text-grey-60">of {Math.ceil(listings.length / 3)}</span></p>
           <div>
-          <button onClick={() => setDisplay(display - 1)} disabled={display === 0}><img src={arrowleft} alt="arrow left"/></button>
-          <button onClick={() => setDisplay(display + 1)} disabled={display === Math.ceil(listings.length / 3) - 1}><img src={arrowright} alt="arrow right" /></button>
+          <button onClick={() => setDisplay(display - 1)} disabled={display === 0} className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square mr-3"><img src={arrowleft} className="" alt="arrow left"/></button>
+          <button onClick={() => setDisplay(display + 1)} disabled={display === Math.ceil(listings.length / 3) - 1}><img src={arrowright} alt="arrow right" className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square"/></button>
           </div>
         </div>
     </div>

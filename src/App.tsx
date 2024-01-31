@@ -5,6 +5,7 @@ import Properties from './pages/Properties'
 import Services from './pages/Services'
 import Error404 from './pages/Error404'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path='/services' element={<Services />} />
             <Route path='*' element={<Error404 />} />
         </Routes>
+    <Footer />
     </>
   )
 }

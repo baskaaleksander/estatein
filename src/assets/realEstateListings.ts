@@ -52,7 +52,7 @@ export const listings: RealEstateListing[] = [
     },
     {
         title: 'Przykładowa nieruchomość 2',
-        description: 'Opis przykładowej nieruchomości 2',
+        description: 'Opis przykładowej nieruchomości 2asdasdsadd',
         image: 'url_do_obrazka2.jpg',
         price: 750000,
         bathrooms: 3,
