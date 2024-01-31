@@ -55,7 +55,7 @@ const FeaturedProperties: React.FC = () => {
           <p className="text-lg text-white-0">{display + 1} <span className="text-grey-60">of {Math.ceil(listings.length / 3)}</span></p>
           <div>
           <button onClick={() => setDisplay(display - 1)} disabled={display === 0} className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square mr-3"><img src={arrowleft} className="" alt="arrow left"/></button>
-          <button onClick={() => setDisplay(display + 1)} disabled={display === Math.ceil(listings.length / 3) - 1}><img src={arrowright} alt="arrow right" className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square"/></button>
+          <button onClick={() => setDisplay(display + 1)} disabled={display === Math.ceil(listings.length / 3) - 1} className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square"><img src={arrowright} alt="arrow right" /></button>
           </div>
         </div>
     </div>
