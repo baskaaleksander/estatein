@@ -8,7 +8,7 @@
 }
 
 .hero-right {
-  background: linear-gradient(238deg, #2A213F 8.76%, rgba(25, 25, 25, 0.00) 50.09%), url("./assets/linedesign.svg") ;
+  background: linear-gradient(238deg, #2A213F 8.76%, rgba(25, 25, 25, 0.00) 50.09%) ;
   background-repeat: no-repeat;
   background-size: cover;
 }
