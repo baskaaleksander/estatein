@@ -3,6 +3,7 @@ import FeaturedCard from "./FeaturedCard"
 import { listings } from "../assets/realEstateListings"
 import arrowleft from '../assets/arrowleft.svg'
 import arrowright from '../assets/arrowright.svg'
+import { useNavigate } from "react-router-dom"
 
 const FeaturedProperties: React.FC = () => {
 
@@ -20,6 +21,7 @@ const FeaturedProperties: React.FC = () => {
 
   const [cards, setCards] = useState<FeaturedCardProps[]>([])
   const [display, setDisplay] = useState(0)
+  const navigation = useNavigate()
 
   useEffect(() => {
     setCards(listings.slice(display * 3, (display * 3) + 3))
@@ -45,7 +47,7 @@ const FeaturedProperties: React.FC = () => {
         <h2 className="text-5xl text-white-0">Featured Properties</h2>
         <div className="flex justify-between">
             <p className="text-grey-60 text-lg">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
-            <button className="px-6 py-4 bg-grey-10 text-white-0 rounded-xl border border-solid border-grey-15 text-lg">View All Properties</button>
+            <button className="px-6 py-4 bg-grey-10 text-white-0 rounded-xl border border-solid border-grey-15 text-lg" onClick={() => navigation('/properties')}>View All Properties</button>
             
         </div>
         <div className="grid grid-cols-3 gap-6 my-12">

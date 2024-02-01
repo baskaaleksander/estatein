@@ -1,6 +1,7 @@
 import bedroomicon from '../assets/bedroomicon.svg'
 import bathroomicon from '../assets/bathroomicon.svg'
 import typeicon from '../assets/typeicon.svg'
+import { useNavigate } from 'react-router-dom'
 
 interface FeaturedCardProps { 
   title: string,
@@ -14,16 +15,9 @@ interface FeaturedCardProps {
 }
 
 const FeaturedCard = ({title, description, image, price, bathrooms, bedrooms, type, link} : FeaturedCardProps) => {
+  const navigate = useNavigate();
   return (
     <div className="text-white-0 text-xl bg-grey-08 rounded-lg border border-solid border-grey-15 flex flex-col p-10">
-      {/* {title}
-      {description}
-      {image}
-      {price}
-      {bathrooms}
-      {bedrooms}
-      {type}
-      {link} */}
       <img src={image} alt={title} className="w-full rounded-lg" />
       <div className="mt-8">
         <h3 className="text-2xl font-semibold">{title}</h3>
@@ -40,7 +34,7 @@ const FeaturedCard = ({title, description, image, price, bathrooms, bedrooms, ty
           <p className='text-base text-grey-60'>Price</p>
           <p className="text-2xl">${price}</p>
         </div>
-        <button className='bg-purple-60 px-6 py-4 rounded-xl'><a href={link} className="">View Property Details</a></button>
+        <button className='bg-purple-60 px-6 py-4 rounded-xl' onClick={() => navigate(`${link}`)}>View Property Details</button>
       </div>
 
     </div>

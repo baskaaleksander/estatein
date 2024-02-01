@@ -1,8 +1,12 @@
-import React from 'react'
+import PropertiesAll from "../components/PropertiesAll"
+import PropertyHero from "../components/PropertyHero"
 
 const Properties = () => {
   return (
-    <div>Properties</div>
+    <div className="bg-grey-08">
+      <PropertyHero />
+      <PropertiesAll />
+    </div>
   )
 }
 
