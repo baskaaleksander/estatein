@@ -28,7 +28,7 @@ useEffect(() => {
 const contentArray = cards.map((card, index) => {
     return (
         <TestimonialCard
-        key={index}
+            key={index}
             title={card.title}
             name={card.name}
             img={card.img}

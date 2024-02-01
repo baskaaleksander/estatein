@@ -1,6 +1,8 @@
 import Achievements from "../components/Achievements"
 import Journey from "../components/Journey"
 import Values from "../components/Values"
+import ExperienceMap from "../components/ExperienceMap"
+import Team from "../components/Team"
 
 const About = () => {
   return (
@@ -8,6 +10,8 @@ const About = () => {
       <Journey />
       <Values />
       <Achievements />
+      <ExperienceMap />
+      <Team />
     </div>
   )
 }
