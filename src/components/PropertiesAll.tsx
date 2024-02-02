@@ -9,7 +9,7 @@ const PropertiesAll = () => {
     const [minBathrooms, setMinBathrooms] = useState("All");
 
     const filteredListings = listings.filter((listing) => {
-        const isMatchingSearch = listing.title.toLowerCase().includes(search.toLowerCase());
+        const isMatchingSearch = listing.location.toLowerCase().includes(search.toLowerCase());
         const isMatchingType = propertyType === "All" || propertyType === listing.type;
         const isMatchingBedrooms = minBedrooms === "All" || listing.bedrooms >= parseInt(minBedrooms);
         const isMatchingBathrooms = minBathrooms === "All" || listing.bathrooms >= parseInt(minBathrooms);
@@ -27,7 +27,7 @@ const PropertiesAll = () => {
                 bathrooms={listing.bathrooms}
                 bedrooms={listing.bedrooms}
                 type={listing.type}
-                link={listing.link}
+                link={`/properties/${listing.id}`}
             />
         )
     });
@@ -35,7 +35,7 @@ const PropertiesAll = () => {
     return (
         <div className="py-20 flex flex-col items-center mx-[10%]">
             <div className="w-[90%]">
-                <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search for your property" className="w-full p-6 text-2xl bg-grey-08 border border-solid border-grey-15 rounded-2xl text-white-0 shadow-card focus-within:border-purple-60 outline-none" />
+                <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search for your desired location!" className="w-full p-6 text-2xl bg-grey-08 border border-solid border-grey-15 rounded-2xl text-white-0 shadow-card focus-within:border-purple-60 outline-none" />
             </div>
             <div>
                 <div className="flex pt-10 text-white-0 justify-center items-center">

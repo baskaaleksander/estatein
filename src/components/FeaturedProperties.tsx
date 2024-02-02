@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom"
 const FeaturedProperties: React.FC = () => {
 
   type FeaturedCardProps = {
+    id: number;
     title: string;
     description: string;
     image: string;
@@ -15,7 +16,6 @@ const FeaturedProperties: React.FC = () => {
     bathrooms: number;
     bedrooms: number;
     type: string;
-    link: string;
   
   }
 
@@ -36,8 +36,8 @@ const FeaturedProperties: React.FC = () => {
         bathrooms={card.bathrooms}
         bedrooms={card.bedrooms}
         type={card.type}
-        link={card.link}
         key={index}
+        link={`/properties/${card.id}`}
       />
     )
   })
