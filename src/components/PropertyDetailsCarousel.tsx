@@ -9,7 +9,7 @@ const PropertyDetailsCarousel = ({photos} : { photos: string[] }) => {
         });
 
       return (
-        <div className="p-12 bg-grey-15 border border-solid border-grey-30 rounded-xl">
+        <div className="p-12 border border-solid border-grey-15 rounded-xl">
             <div className="grid grid-cols-3 gap-5 p-3 bg-grey-10 border border-solid border-grey-15 rounded-lg">
                 {everyPhoto}
             </div>
