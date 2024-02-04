@@ -3,6 +3,7 @@ import { listings } from '../assets/realEstateListings';
 import Error404 from './Error404';
 import PropertyDetailsCarousel from '../components/PropertyDetailsCarousel';
 import KeyFeatures from '../components/KeyFeatures';
+import Badge from '../components/Badge';
 
 const PropertyDetails = () => {
   const {id} = useParams();
@@ -17,7 +18,10 @@ const PropertyDetails = () => {
 
     <div className='px-[10%] bg-grey-08 py-20  text-white-0'>
       <div className='flex justify-between items-center'>
-      <h2 className='text-3xl'>{property.title}, <span className='text-grey-60 text-2xl'>{property.location}</span></h2>
+        <div className='flex items-center'>
+      <h2 className='text-3xl mr-2'>{property.title}</h2>
+      <Badge text={property.location} />
+      </div>
       <div>
         <p className='text-xl text-grey-60'>Price</p>
         <p className='text-2xl'>${property.price}</p>

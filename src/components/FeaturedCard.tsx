@@ -2,6 +2,8 @@ import bedroomicon from '../assets/bedroomicon.svg'
 import bathroomicon from '../assets/bathroomicon.svg'
 import typeicon from '../assets/typeicon.svg'
 import { useNavigate } from 'react-router-dom'
+import Badge from './Badge'
+import Button from './Button'
 
 interface FeaturedCardProps {
   title: string,
@@ -24,9 +26,9 @@ const FeaturedCard = ({title, description, image, price, bathrooms, bedrooms, ty
         <p className="text-lg text-grey-60">{description}</p>
       </div>
       <div className='flex my-8'>
-        <p className="text-lg mr-2 px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15"><img src={bedroomicon} className='inline ' alt='bedroomicon'/> {bedrooms}-Bedroom</p>
-        <p className='text-lg mr-2 px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15'><img src={bathroomicon} className='inline' alt='bathroomsicon' /> {bathrooms}-Bathroom</p>
-        <p className="text-lg mr-2 px-2 py-3.5 bg-grey-10 rounded-3xl border border-solid border-grey-15"><img src={typeicon} className='inline' alt='type icon.' /> {type}</p>
+        <Badge icon={bedroomicon} text={`${bedrooms}-Bedroom`} />
+        <Badge icon={bathroomicon} text={`${bathrooms}-Bathroom`} />
+        <Badge icon={typeicon} text={type} />
       </div>
       
       <div className='grid grid-cols-2'>
@@ -34,7 +36,7 @@ const FeaturedCard = ({title, description, image, price, bathrooms, bedrooms, ty
           <p className='text-base text-grey-60'>Price</p>
           <p className="text-2xl">${price}</p>
         </div>
-        <button className='bg-purple-60 px-6 py-4 rounded-xl' onClick={() => navigate(`${link}`)}>View Property Details</button>
+        <Button color="purple" text="View Property Details" onClick={() => navigate(`${link}`)} />
       </div>
 
     </div>

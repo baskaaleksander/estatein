@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { testimonials } from "../assets/testimonialsData";
 import TestimonialCard from "./TestimonialCard";
-import arrowleft from '../assets/arrowleft.svg'
-import arrowright from '../assets/arrowright.svg'
+import NavigationButtons from "./NavigationButtons";
 
 
 
@@ -48,8 +47,7 @@ const contentArray = cards.map((card, index) => {
     <div className="flex justify-between items-center">
           <p className="text-lg text-white-0">{display + 1} <span className="text-grey-60">of {Math.ceil(testimonials.length / 3)}</span></p>
           <div>
-          <button onClick={() => setDisplay(display - 1)} disabled={display === 0} className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square mr-3"><img src={arrowleft} className="" alt="arrow left"/></button>
-          <button onClick={() => setDisplay(display + 1)} disabled={display === Math.ceil(testimonials.length / 3) - 1} className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square"><img src={arrowright} alt="arrow right" /></button>
+            <NavigationButtons onClickLeft={() => setDisplay(display - 1)} disabledLeft={display === 0} onClickRight={() => setDisplay(display + 1)} disabledRight={display === Math.ceil(testimonials.length / 3) - 1} />
           </div>
         </div>
 

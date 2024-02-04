@@ -4,6 +4,8 @@ import { listings } from "../assets/realEstateListings"
 import arrowleft from '../assets/arrowleft.svg'
 import arrowright from '../assets/arrowright.svg'
 import { useNavigate } from "react-router-dom"
+import Button from "./Button"
+import NavigationButtons from "./NavigationButtons"
 
 const FeaturedProperties: React.FC = () => {
 
@@ -47,7 +49,7 @@ const FeaturedProperties: React.FC = () => {
         <h2 className="text-5xl text-white-0">Featured Properties</h2>
         <div className="flex justify-between">
             <p className="text-grey-60 text-lg">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
-            <button className="px-6 py-4 bg-grey-10 text-white-0 rounded-xl border border-solid border-grey-15 text-lg" onClick={() => navigation('/properties')}>View All Properties</button>
+            <Button color="grey" text="View All Properties" onClick={() => navigation('/properties')} />
             
         </div>
         <div className="grid grid-cols-3 gap-6 my-12">
@@ -56,8 +58,7 @@ const FeaturedProperties: React.FC = () => {
         <div className="flex justify-between items-center">
           <p className="text-lg text-white-0">{display + 1} <span className="text-grey-60">of {Math.ceil(listings.length / 3)}</span></p>
           <div>
-          <button onClick={() => setDisplay(display - 1)} disabled={display === 0} className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square mr-3"><img src={arrowleft} className="" alt="arrow left"/></button>
-          <button onClick={() => setDisplay(display + 1)} disabled={display === Math.ceil(listings.length / 3) - 1} className="bg-grey-10 p-3 border border-solid border-grey-15 rounded-full aspect-square"><img src={arrowright} alt="arrow right" /></button>
+          <NavigationButtons onClickLeft={() => setDisplay(display - 1)} disabledLeft={display === 0} onClickRight={() => setDisplay(display + 1)} disabledRight={display === Math.ceil(listings.length / 3) - 1} />
           </div>
         </div>
     </div>

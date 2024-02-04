@@ -1,30 +1,22 @@
 import React from 'react'
 import heroimg from '../assets/heroimg.png'
+import { useNavigate } from 'react-router-dom';
+import Button from './Button';
+import Informations from './Informations';
 
 const Hero: React.FC = () => {
+    const navigate = useNavigate();
   return (
     <div className='pl-[10%] grid grid-cols-2 gap-10'>
         <div className='flex flex-col justify-center'>
         <h1 className='text-white-0 text-6xl leading-[72px]'>Discover Your Dream Property with Estatein</h1>
         <p className='text-grey-60 font-medium'>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
         <div className='py-12'>
-            <button className='font-medium text-white-0 px-6 py-3.5 border border-solid border-grey-15 rounded-xl mr-5'>Learn more</button>
-            <button className='font-medium text-white-0 px-6 py-3.5 bg-purple-60 rounded-xl'>Browse Properties</button>
+            <Button color="purple" text="Browse Properties" onClick={() => navigate('/properties')} additionalStyle='mr-5'/>
+            <Button color="grey" text="Learn more" onClick={() => navigate('/about')} />
         </div>
         <div className='grid grid-cols-3 gap-5 py-13' >
-            <div className='text-white-0 px-6 py-3.5 border border-solid border-grey-15 rounded-xl'>
-                <h2 className='text-4xl'>200+</h2>
-                <p className='text-lg text-grey-60'>Happy Customers</p>
-            </div>
-            <div className='text-white-0 px-6 py-3.5 border border-solid border-grey-15 rounded-xl'>
-                <h2 className='text-4xl'>10k+</h2>
-                <p className='text-lg text-grey-60'>Properties For Clients</p>
-            </div>
-            <div className='text-white-0 px-6 py-3.5 border border-solid border-grey-15 rounded-xl'>
-                <h2 className='text-4xl'>16+</h2>
-                <p className='text-lg text-grey-60'>Years of Experience</p>
-            </div>
-
+            <Informations />
         </div>
         </div>
         <div className='flex hero-right'>
