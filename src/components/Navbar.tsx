@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/Logo.svg'
 import { NavLink, useNavigate } from 'react-router-dom'
-import Button from './Button';
+import Button from './ui/Button';
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();

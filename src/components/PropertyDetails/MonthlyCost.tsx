@@ -1,4 +1,4 @@
-import Badge from "../Badge"
+import Badge from "../ui/Badge"
 
 const MonthlyCost = ({propertytaxes, associationfee} : {propertytaxes: number, associationfee: number}) => {
   return (

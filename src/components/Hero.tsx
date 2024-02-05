@@ -1,7 +1,7 @@
 import React from 'react'
 import heroimg from '../assets/heroimg.png'
 import { useNavigate } from 'react-router-dom';
-import Button from './Button';
+import Button from './ui/Button';
 import Informations from './Informations';
 
 const Hero: React.FC = () => {

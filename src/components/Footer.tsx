@@ -4,7 +4,7 @@ import facebook from '../assets/iconfb.svg'
 import twitter from '../assets/icontwitter.svg'
 import yt from '../assets/iconyt.svg'
 import linkedin from '../assets/iconlinkedin.svg'
-import Button from './Button'
+import Button from './ui/Button'
 
 const Footer: React.FC = () => {
   const navigation = useNavigate();

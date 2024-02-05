@@ -1,4 +1,4 @@
-import AchievementCard from "./AchievementCard";
+import AchievementCard from "./ui/AchievementCard";
 
 const Achievements = () => {
     interface Achievements {

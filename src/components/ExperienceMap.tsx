@@ -1,4 +1,4 @@
-import ExperienceCard from "./ExperienceCard"
+import ExperienceCard from "./ui/ExperienceCard"
 
 interface Experience{
     title: string

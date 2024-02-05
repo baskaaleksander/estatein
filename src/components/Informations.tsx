@@ -1,4 +1,4 @@
-import InformationsCard from "./InformationsCard"
+import InformationsCard from "./ui/InformationsCard"
 
 interface InformationsInterface {
     title: string

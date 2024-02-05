@@ -2,8 +2,8 @@ import bedroomicon from '../assets/bedroomicon.svg'
 import bathroomicon from '../assets/bathroomicon.svg'
 import typeicon from '../assets/typeicon.svg'
 import { useNavigate } from 'react-router-dom'
-import Badge from './Badge'
-import Button from './Button'
+import Badge from './ui/Badge'
+import Button from './ui/Button'
 
 interface FeaturedCardProps {
   title: string,
@@ -13,7 +13,7 @@ interface FeaturedCardProps {
   bathrooms: number,
   bedrooms: number,
   type: string,
-  link: string
+  link: string,
 }
 
 const FeaturedCard = ({title, description, image, price, bathrooms, bedrooms, type, link} : FeaturedCardProps) => {

@@ -3,7 +3,7 @@ import { listings } from '../assets/realEstateListings';
 import Error404 from './Error404';
 import PropertyDetailsCarousel from '../components/PropertyDetailsCarousel';
 import KeyFeatures from '../components/KeyFeatures';
-import Badge from '../components/Badge';
+import Badge from '../components/ui/Badge';
 import PropertyDescription from '../components/PropertyDescription';
 import PricingDetails from '../components/PricingDetails';
 

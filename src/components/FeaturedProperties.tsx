@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import FeaturedCard from "./FeaturedCard"
 import { listings } from "../assets/realEstateListings"
 import { useNavigate } from "react-router-dom"
-import Button from "./Button"
+import Button from "./ui/Button"
 import NavigationButtons from "./NavigationButtons"
 
 const FeaturedProperties: React.FC = () => {
