@@ -2,6 +2,7 @@ import GradientHero from '../components/ui/GradientHero'
 import Pros from '../components/Pros'
 import ServicesValue from '../components/ServicesValue'
 import ServiceManagement from '../components/ServiceManagement'
+import ServiceDecisions from '../components/ServiceDecisions'
 
 const Services = () => {
   return (
@@ -10,6 +11,7 @@ const Services = () => {
       <Pros />
       <ServicesValue />
       <ServiceManagement />
+      <ServiceDecisions />
     </div>
   )
 }
