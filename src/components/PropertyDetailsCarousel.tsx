@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NavigationButtons from "./NavigationButtons";
 
 const PropertyDetailsCarousel = ({photos} : { photos: string[] }) => {
 
@@ -15,7 +16,7 @@ const PropertyDetailsCarousel = ({photos} : { photos: string[] }) => {
             </div>
             <img className="py-8 rounded-3xl" src={photos[currentPhoto]} alt="" />
             <div>
-
+                <NavigationButtons onClickLeft={() => setCurrentPhoto(currentPhoto - 1)} onClickRight={() => setCurrentPhoto(currentPhoto + 1)} disabledLeft={currentPhoto === 0} disabledRight={currentPhoto === photos.length - 1} />
             </div>
         </div>
       )

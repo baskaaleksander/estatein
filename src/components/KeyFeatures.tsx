@@ -7,7 +7,7 @@ const KeyFeatures = ({features} : {features: string[]}) => {
     })
 
   return (
-    <div className="bg-grey-08 border border-solid border-grey-15 p-10 rounded-xl">
+    <div className="bg-grey-08 border border-solid border-grey-15 p-10 rounded-xl mt-8">
         <h3 className="text-xl text-white-0 mb-10">Key Features</h3>
         {keyFeatures}
     </div>

@@ -1,6 +1,15 @@
 interface AdditionalCosts {
-    type: string;
-    cost: number;
+    transfertax: number;
+    legalfees: number;
+    homeinspection: number;
+    insurance: number;
+    propertytax: number;
+    associationfee: number;
+    propertyinsurance: number;
+    listingprice: number;
+    downpayment: number;
+    additionalfees: number;
+    mortgagefees: number;
 
 }
 
@@ -14,9 +23,10 @@ interface RealEstateListing {
     price: number;
     bathrooms: number;
     bedrooms: number;
+    area: number;
     type: string;
     keyfeatures: string[];
-    costs: AdditionalCosts[];
+    costs: AdditionalCosts;
 }
 
 export const listings: RealEstateListing[] = [
@@ -30,18 +40,22 @@ export const listings: RealEstateListing[] = [
         price: 2000000,
         bathrooms: 2,
         bedrooms: 2,
+        area: 150,
         type: 'Apartment',
         keyfeatures: ['Fully Furnished', 'City View', 'Modern Design'],
-        costs: [
-            {
-                type: 'Maintenance',
-                cost: 500
-            },
-            {
-                type: 'Property Tax',
-                cost: 1000
-            }
-        ]
+        costs: {
+            transfertax: 1000,
+            legalfees: 2000,
+            homeinspection: 3000,
+            insurance: 4000,
+            propertytax: 5000,
+            associationfee: 6000,
+            propertyinsurance: 7000,
+            listingprice: 8000,
+            downpayment: 9000,
+            additionalfees: 10000,
+            mortgagefees: 11000
+        }
     },
     {
         id: 2,
@@ -53,18 +67,22 @@ export const listings: RealEstateListing[] = [
         price: 5000000,
         bathrooms: 4,
         bedrooms: 4,
+        area: 400,
         type: 'Villa',
         keyfeatures: ['Fully Furnished', 'Ocean View', 'Luxury Design'],
-        costs: [
-            {
-                type: 'Maintenance',
-                cost: 1000
-            },
-            {
-                type: 'Property Tax',
-                cost: 2000
-            }
-        ]
+        costs: {
+            transfertax: 1000,
+            legalfees: 2000,
+            homeinspection: 3000,
+            insurance: 4000,
+            propertytax: 5000,
+            associationfee: 6000,
+            propertyinsurance: 7000,
+            listingprice: 8000,
+            downpayment: 9000,
+            additionalfees: 10000,
+            mortgagefees: 11000
+        }
     },
     {
         id: 3,
@@ -76,17 +94,21 @@ export const listings: RealEstateListing[] = [
         price: 1000000,
         bathrooms: 2,
         bedrooms: 3,
+        area: 200,
         type: 'House',
         keyfeatures: ['Fully Furnished', 'Garden', 'Cozy Design'],
-        costs: [
-            {
-                type: 'Maintenance',
-                cost: 300
-            },
-            {
-                type: 'Property Tax',
-                cost: 500
-            }
-        ]
+        costs: {
+            transfertax: 1000,
+            legalfees: 2000,
+            homeinspection: 3000,
+            insurance: 4000,
+            propertytax: 5000,
+            associationfee: 6000,
+            propertyinsurance: 7000,
+            listingprice: 8000,
+            downpayment: 9000,
+            additionalfees: 10000,
+            mortgagefees: 11000
+        }
     }
 ];

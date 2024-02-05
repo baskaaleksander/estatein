@@ -4,6 +4,8 @@ import Error404 from './Error404';
 import PropertyDetailsCarousel from '../components/PropertyDetailsCarousel';
 import KeyFeatures from '../components/KeyFeatures';
 import Badge from '../components/Badge';
+import PropertyDescription from '../components/PropertyDescription';
+import PricingDetails from '../components/PricingDetails';
 
 const PropertyDetails = () => {
   const {id} = useParams();
@@ -29,11 +31,23 @@ const PropertyDetails = () => {
       </div>
       <div className='grid grid-cols-2 gap-5 py-14'>
       <div>
-      
-      <KeyFeatures features={property.keyfeatures}/>
+        <PropertyDescription description={property.description} bedrooms={property.bedrooms} bathrooms={property.bathrooms} area={property.area}/>
+        <KeyFeatures features={property.keyfeatures}/>
       </div>
       <PropertyDetailsCarousel photos={property.images}/>
       </div>
+        <PricingDetails 
+          transfertax={property.costs.transfertax} 
+          legalfees={property.costs.legalfees} 
+          homeinspection={property.costs.homeinspection} 
+          insurance={property.costs.insurance} 
+          propertytax={property.costs.propertytax} 
+          associationfee={property.costs.associationfee} 
+          propertyinsurance={property.costs.propertyinsurance} 
+          listingprice={property.price} downpayment={property.price * 0.25} 
+          additionalfees={property.costs.additionalfees} 
+          mortgagefees={property.costs.mortgagefees}
+        />
     </div>
   );
 

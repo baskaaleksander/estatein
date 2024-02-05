@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
 import FeaturedCard from "./FeaturedCard"
 import { listings } from "../assets/realEstateListings"
-import arrowleft from '../assets/arrowleft.svg'
-import arrowright from '../assets/arrowright.svg'
 import { useNavigate } from "react-router-dom"
 import Button from "./Button"
 import NavigationButtons from "./NavigationButtons"
