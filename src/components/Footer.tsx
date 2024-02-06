@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
     <footer className="bg-grey-10">
         <div className="px-[10%]  border border-solid border-grey-15 py-24 flex">
           <div>
-            <h2 className="text-white-0 text-5xl font-semibold">Start Your Real Estate Journey Today</h2>
-            <p className="text-lg text-grey-60">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
+            <h2 className="text-white-0 text-5xl font-semibold laptop:text-4xl tablet:text-3xl mobile:text-2xl">Start Your Real Estate Journey Today</h2>
+            <p className="text-lg text-grey-60 laptop:text-base">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
             </div>
             <Button color="purple" text="Explore Properties" onClick={() => navigation("/properties")} />
         </div>
@@ -22,15 +22,15 @@ const Footer: React.FC = () => {
                 <img src={logo} alt="logo" />
             </div>
             <ul className='flex'>
-              <li className='text-grey-60 hover:text-purple-60 mr-3'><Link to="/">Home</Link></li>
-              <li className='text-grey-60 hover:text-purple-60 mr-3'><Link to="/about">About Us</Link></li>
-              <li className='text-grey-60 hover:text-purple-60 mr-3'><Link to="/properties">Properties</Link></li>
-              <li className='text-grey-60 hover:text-purple-60 mr-3'><Link to="/services">Services</Link></li>
-              <li className='text-grey-60 hover:text-purple-60'><Link to="/about">Contact Us</Link></li>
+              <li className='text-grey-60 hover:text-purple-60 mr-3 text-center text-lg laptop:text-base'><Link to="/">Home</Link></li>
+              <li className='text-grey-60 hover:text-purple-60 mr-3 text-lg laptop:text-base text-center'><Link to="/about">About Us</Link></li>
+              <li className='text-grey-60 hover:text-purple-60 mr-3 text-lg laptop:text-base text-center'><Link to="/properties">Properties</Link></li>
+              <li className='text-grey-60 hover:text-purple-60 mr-3 text-lg laptop:text-base text-center'><Link to="/services">Services</Link></li>
+              <li className='text-grey-60 hover:text-purple-60 text-lg laptop:text-base text-center'><Link to="/about">Contact Us</Link></li>
             </ul>
         </div>
         <div className='bg-grey-10 px-[10%] py-4 flex justify-between items-center'>
-          <h2 className='text-white-0'>@2023 Estatein. All Rights Reserved.</h2>
+          <h2 className='text-white-0 text-lg laptop:text-base'>@2023 Estatein. All Rights Reserved.</h2>
           <div>
             <button className='bg-grey-08 p-3 rounded-full'><img src={facebook} className='w-6 h-6' alt="" /></button>
             <button className='bg-grey-08 p-3 rounded-full'><img src={linkedin} className='w-6 h-6' alt="" /></button>

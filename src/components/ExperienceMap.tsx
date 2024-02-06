@@ -50,9 +50,9 @@ const contentArray = ExperienceCards.map((card, index) => {
 const ExperienceMap = () => {
   return (
     <div className="px-[10%] py-20">
-        <h2 className="text-white-0 text-5xl">Navigating the Estatein Experience</h2>
-        <p className="text-grey-60 text-lg">At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works.</p>
-        <div className="grid grid-cols-3 grid-rows-2 gap-8 auto-rows-auto pt-20">
+        <h2 className="text-white-0 text-5xl font-semibold laptop:text-4xl tablet:text-3xl mobile:text-2xl">Navigating the Estatein Experience</h2>
+        <p className="text-grey-60 text-lg laptop:text-base">At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works.</p>
+        <div className="grid grid-cols-3 grid-rows-2 gap-8 auto-rows-auto pt-20 tablet:grid-cols-2 mobile:grid-cols-1">
             {contentArray}
         </div>
     </div>

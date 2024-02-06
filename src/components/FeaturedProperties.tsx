@@ -44,9 +44,9 @@ const FeaturedProperties: React.FC = () => {
 
   return (
     <div className="w-[80%] mx-[10%] flex flex-col">
-        <h2 className="text-5xl text-white-0">Featured Properties</h2>
+        <h2 className="text-5xl text-white-0 font-semibold laptop:text-4xl tablet:text-3xl mobile:text-2xl">Featured Properties</h2>
         <div className="flex justify-between">
-            <p className="text-grey-60 text-lg">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
+            <p className="text-grey-60 text-lg laptop:text-base">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
             <Button color="grey" text="View All Properties" onClick={() => navigation('/properties')} />
             
         </div>
@@ -54,7 +54,7 @@ const FeaturedProperties: React.FC = () => {
             {contentArray}
         </div>
         <div className="flex justify-between items-center">
-          <p className="text-lg text-white-0">{display + 1} <span className="text-grey-60">of {Math.ceil(listings.length / 3)}</span></p>
+          <p className="text-lg text-white-0 laptop:text-base">{display + 1} <span className="text-grey-60">of {Math.ceil(listings.length / 3)}</span></p>
           <div>
           <NavigationButtons onClickLeft={() => setDisplay(display - 1)} disabledLeft={display === 0} onClickRight={() => setDisplay(display + 1)} disabledRight={display === Math.ceil(listings.length / 3) - 1} />
           </div>

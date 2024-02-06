@@ -22,12 +22,12 @@ const PropertyDetails = () => {
     <div className='px-[10%] bg-grey-08 py-20  text-white-0'>
       <div className='flex justify-between items-center'>
         <div className='flex items-center'>
-      <h2 className='text-3xl mr-2'>{property.title}</h2>
+      <h2 className='text-3xl mr-2 font-semibold laptop:text-2xl tablet:text-xl mobile:text-lg'>{property.title}</h2>
       <Badge text={property.location} />
       </div>
       <div>
-        <p className='text-xl text-grey-60'>Price</p>
-        <p className='text-2xl'>${property.price}</p>
+        <p className='text-xl text-grey-60 laptop:text-lg tablet:text-base mobile:text-sm'>Price</p>
+        <p className='text-2xl laptop:text-xl tablet:text-lg mobile:text-base'>${property.price}</p>
       </div>
       </div>
       <div className='grid grid-cols-2 gap-5 py-14'>

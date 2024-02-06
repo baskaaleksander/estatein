@@ -41,10 +41,10 @@ const Team = () => {
   return (
     <div className="py-20 px-[10%]">
         <div>
-            <h2 className="text-white-0 text-5xl">Meet the Estatein Team</h2>
-            <p className="text-lg text-grey-60">At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality.</p>
+            <h2 className="text-white-0 text-5xl font-semibold laptop:text-4xl tablet:text-3xl mobile:text-2xl">Meet the Estatein Team</h2>
+            <p className="text-lg text-grey-60 laptop:text-base">At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality.</p>
         </div>
-        <div className="grid grid-cols-4 pt-20 gap-8">
+        <div className="grid grid-cols-4 pt-20 gap-8 tablet:grid-cols-2 mobile:grid-cols-1">
             {contentArray}
         </div>
     </div>

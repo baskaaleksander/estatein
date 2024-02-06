@@ -7,14 +7,14 @@ const ButtonGroup = ({buttons, onClick} : {buttons: string[], onClick: any}) => 
         onClick(e);
     }
 return (
-    <div className={`bg-grey-10 text-white-0 py-3 grid grid-cols-${buttons.length}`}>
+    <div className={`bg-grey-10 text-white-0 py-3 grid grid-cols-${buttons.length} mobile:grid-cols-1`}>
         {buttons.map((button, index) => {
             return (
                 <button 
                     key={index}
                     name={button}
                     onClick={(e) => handleClick({ e, index })} 
-                    className={`border border-solid border-grey-15 text-white-0 text-lg rounded-lg px-6 py-4 mx-3 ${index === clickedId ? 'bg-grey-08' : ''}`}
+                    className={`border border-solid border-grey-15 text-white-0 text-lg laptop:text-base tablet:text-sm rounded-lg px-6 py-4 mx-3 ${index === clickedId ? 'bg-grey-08' : ''}`}
                 >
                     {button}
                 </button>

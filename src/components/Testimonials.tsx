@@ -39,8 +39,8 @@ const contentArray = cards.map((card, index) => {
 })
   return (
     <div className="w-[80%] mx-[10%] pb-24">
-        <h2 className="text-white-0 text-5xl">What Our Clients Say</h2>
-        <p className="text-lg text-grey-60">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
+        <h2 className="text-white-0 text-5xl font-semibold laptop:text-4xl tablet:text-3xl mobile:text-2xl">What Our Clients Say</h2>
+        <p className="text-lg text-grey-60 laptop:text-base">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
     <div className="grid grid-cols-3 gap-6 my-12">
         {contentArray}
     </div>

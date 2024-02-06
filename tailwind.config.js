@@ -6,7 +6,11 @@ export default {
   ],  
   theme: {
     extend: {},
-    screens: {},
+    screens: {
+      'laptop': {'max': '1920px'},
+      'tablet': {'max': '1024px'},
+      'mobile': {'max': '768px'},
+    },
     colors: {
       'purple-60': '#703BF7',
       'purple-65': '#1A64FF',

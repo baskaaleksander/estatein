@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
   return (
     <div className='pl-[10%] grid grid-cols-2 gap-10'>
         <div className='flex flex-col justify-center'>
-        <h1 className='text-white-0 text-6xl leading-[72px]'>Discover Your Dream Property with Estatein</h1>
-        <p className='text-grey-60 font-medium'>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+        <h1 className='text-white-0 text-6xl leading-[72px] laptop:text-5xl tablet:text-4xl mobile:text-3xl'>Discover Your Dream Property with Estatein</h1>
+        <p className='text-grey-60 font-medium text-lg laptop:text-base'>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
         <div className='py-12'>
             <Button color="purple" text="Browse Properties" onClick={() => navigate('/properties')} additionalStyle='mr-5'/>
             <Button color="grey" text="Learn more" onClick={() => navigate('/about')} />
