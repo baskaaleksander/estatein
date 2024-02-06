@@ -1,11 +1,12 @@
 import { useParams } from 'react-router-dom'
-import { listings } from '../assets/realEstateListings';
+import { listings } from '../assets/data/realEstateListings';
 import Error404 from './Error404';
 import PropertyDetailsCarousel from '../components/PropertyDetailsCarousel';
 import KeyFeatures from '../components/KeyFeatures';
 import Badge from '../components/ui/Badge';
 import PropertyDescription from '../components/PropertyDescription';
 import PricingDetails from '../components/PricingDetails';
+import ContactForm from '../components/ui/ContactForm';
 
 const PropertyDetails = () => {
   const {id} = useParams();
@@ -36,6 +37,7 @@ const PropertyDetails = () => {
       </div>
       <PropertyDetailsCarousel photos={property.images}/>
       </div>
+        <ContactForm />
         <PricingDetails 
           transfertax={property.costs.transfertax} 
           legalfees={property.costs.legalfees} 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import FeaturedCard from "./FeaturedCard"
-import { listings } from "../assets/realEstateListings"
+import { listings } from "../assets/data/realEstateListings"
 import { useNavigate } from "react-router-dom"
 import Button from "./ui/Button"
 import NavigationButtons from "./NavigationButtons"

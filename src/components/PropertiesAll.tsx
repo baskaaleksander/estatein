@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { listings } from "../assets/realEstateListings";
+import { listings } from "../assets/data/realEstateListings";
 import FeaturedCard from "./FeaturedCard";
 
 const PropertiesAll = () => {
@@ -41,7 +41,7 @@ const PropertiesAll = () => {
                 <div className="flex pt-10 text-white-0 justify-center items-center">
                     <div>
                         <label htmlFor="propertyType" className="text-lg text-grey-60">Property Type</label>
-                        <select className="bg-grey-08 border border-solid border-grey-15 text-lg p-3 outline-none focus-within:border-purple-60 mx-5" value={propertyType} onChange={(e) => setPropertyType(e.target.value)} id="propertyType">
+                        <select className=" bg-grey-10 text-lg rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60 mx-5" value={propertyType} onChange={(e) => setPropertyType(e.target.value)} id="propertyType">
                             <option value="All">All</option>
                             <option value="House">House</option>
                             <option value="Apartment">Apartment</option>
@@ -49,7 +49,7 @@ const PropertiesAll = () => {
                         </select>
                     </div>
                     <label htmlFor="bedrooms" className="text-lg text-grey-60">Bedrooms</label>
-                    <select className="bg-grey-08 border border-solid border-grey-15 text-lg p-3 outline-none focus-within:border-purple-60 mx-5" value={minBedrooms} onChange={(e) => setMinBedrooms(e.target.value)} id="bedrooms">
+                    <select className="bg-grey-10 text-lg rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60 mx-5" value={minBedrooms} onChange={(e) => setMinBedrooms(e.target.value)} id="bedrooms">
                         <option value="All">All</option>
                         <option value="1">1+</option>
                         <option value="2">2+</option>
@@ -57,7 +57,7 @@ const PropertiesAll = () => {
                         <option value="4">4+</option>
                     </select>
                     <label htmlFor="bathrooms" className="text-lg text-grey-60">Bathrooms</label>
-                    <select className="bg-grey-08 border border-solid border-grey-15 text-lg p-3 focus-within:border-purple-60 outline-none mx-5" value={minBathrooms} onChange={(e) => setMinBathrooms(e.target.value)} id="bathrooms">
+                    <select className="bg-grey-10 text-lg rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60 mx-5" value={minBathrooms} onChange={(e) => setMinBathrooms(e.target.value)} id="bathrooms">
                         <option value="All">All</option>
                         <option value="1">1+</option>
                         <option value="2">2+</option>

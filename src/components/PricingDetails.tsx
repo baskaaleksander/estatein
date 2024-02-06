@@ -19,7 +19,7 @@ interface PricingDetailsProps {
 
 const PricingDetails = ({transfertax, legalfees, homeinspection, insurance, propertytax, associationfee, propertyinsurance, listingprice, downpayment, additionalfees, mortgagefees} : PricingDetailsProps) => {
   return (
-    <div>
+    <div className="pt-20">
         <AdditionalFees transfertax={transfertax} legalfees={legalfees} homeinspection={homeinspection} insurance={insurance} />
         <MonthlyCost propertytaxes={propertytax} associationfee={associationfee} />
         <TotalInitialCost listingprice={listingprice} downpayment={downpayment} additionalfees={additionalfees} mortgagefees={mortgagefees} />

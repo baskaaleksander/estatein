@@ -7,6 +7,7 @@ import Error404 from './pages/Error404'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import PropertyDetails from './pages/PropertyDetails'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path='/properties' element={<Properties />} />
             <Route path='/properties/:id' element={<PropertyDetails />} />
             <Route path='/services' element={<Services />} />
+            <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<Error404 />} />
         </Routes>
     <Footer />

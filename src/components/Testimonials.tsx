@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { testimonials } from "../assets/testimonialsData";
+import { testimonials } from "../assets/data/testimonialsData";
 import TestimonialCard from "./TestimonialCard";
 import NavigationButtons from "./NavigationButtons";
 

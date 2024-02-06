@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
             <li className='p-8'><NavLink className='text-white-0 hover:text-purple-60 active:px-6 active:py-4 active:bg-grey-10 active:rounded-xl active:border active:border-solid active:border-grey-15' to="/properties">Properties</NavLink></li>
             <li className='p-8'><NavLink className='text-white-0 hover:text-purple-60 active:px-6 active:py-4 active:bg-grey-10 active:rounded-xl active:border active:border-solid active:border-grey-15' to="/services">Services</NavLink></li>
         </ul>
-        <Button color="grey" onClick={() => navigate('/about')} text="Contact us!" />
+        <Button color="grey" onClick={() => navigate('/contact')} text="Contact us!" />
     </nav>
   )
 }
