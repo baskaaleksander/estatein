@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+<h2>About my project</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>Estatein - real estate agency website, built fully responsive using React, TypeScript, React Router DOM</p>
 
-Currently, two official plugins are available:
+<b>Live demo: </b><a href="https://estatein-beta.vercel.app/">Click me!</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Built using:</h3>
+<ul>
+    <li>React</li>
+    <li>HTML</li>
+    <li>TypeScript</li>
+    <li>Tailwind CSS</li>
+    <li>React Router DOM</li>
+</ul>
 
-## Expanding the ESLint configuration
+<h2>Screenshots</h2>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<div align='center'>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/86Qrq4b"  ><a href="//imgur.com/a/86Qrq4b">estatein</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Yz21BuF" data-context="false" ><a href="//imgur.com/a/Yz21BuF"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+</div>
