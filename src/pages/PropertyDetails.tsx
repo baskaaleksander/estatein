@@ -7,6 +7,7 @@ import Badge from '../components/ui/Badge';
 import PropertyDescription from '../components/PropertyDescription';
 import PricingDetails from '../components/PricingDetails';
 import ContactComponent from '../components/ContactComponent';
+import { Toaster } from 'react-hot-toast';
 
 const PropertyDetails = () => {
   const {id} = useParams();
@@ -20,6 +21,7 @@ const PropertyDetails = () => {
   return (
 
     <div className='px-[10%] bg-grey-08 py-20  text-white-0'>
+      <Toaster />
       <div className='flex justify-between items-center mobile:flex-col'>
         <div className='flex items-center  mobile:flex-col'>
       <h2 className='text-3xl mr-2 font-semibold laptop:text-2xl tablet:text-xl mobile:text-lg'>{property.title}</h2>
