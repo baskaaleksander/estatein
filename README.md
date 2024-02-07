@@ -1,6 +1,6 @@
 <h2>About my project</h2>
 
-<p>Estatein - real estate agency website, built fully responsive using React, TypeScript, React Router DOM</p>
+<p>Estatein - multiple page real estate agency website, built fully responsive using React, TypeScript, React Router DOM</p>
 
 <b>Live demo: </b><a href="https://estatein-beta.vercel.app/">Click me!</a>
 
@@ -19,3 +19,5 @@
 <img src='https://i.imgur.com/mTKqL3O.png' />
 <img src='https://i.imgur.com/Pq08mL8.png' />
 </div>
+
+<p>Credits for design for <a href='https://www.figma.com/@produce_ui'>Produce UI</a></p>
