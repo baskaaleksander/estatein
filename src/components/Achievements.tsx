@@ -31,7 +31,7 @@ const Achievements = () => {
             <h2 className="text-white-0 text-5xl font-semibold laptop:text-4xl tablet:text-3xl mobile:text-2xl">Our Achievements</h2>
             <p className="text-grey-60 text-lg laptop:text-base">Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.</p>
         </div>
-        <div className="grid grid-cols-3 gap-10 pt-20">
+        <div className="grid grid-cols-3 gap-10 pt-20 navbar:grid-cols-1">
             {contentArray}
         </div>
     </div>

@@ -16,7 +16,7 @@ const PropertyDescription = ({description, bedrooms, bathrooms, area} : Property
             <h2 className="text-2xl text-white-0 pb-3 font-semibold laptop:text-xl tablet:text-lg">Description</h2>
             <p className="text-lg text-grey-60 laptop:text-base tablet:text-sm">{description}</p>
         </div>
-        <div className="grid grid-cols-3 pt-12">
+        <div className="grid grid-cols-3 pt-12 mobile:grid-cols-1 ">
             <div>
                 <div className='flex'>
                     <img src={bedroomsicon} alt="" />

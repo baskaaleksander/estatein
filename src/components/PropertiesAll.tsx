@@ -39,15 +39,14 @@ const PropertiesAll = () => {
             </div>
             <div>
                 <div className="flex pt-10 text-white-0 justify-center items-center mobile:flex-col">
-                    <div>
-                        <label htmlFor="propertyType" className="text-lg text-grey-60 laptop:text-base tablet:text-sm">Property Type</label>
+                    
+                        <label htmlFor="propertyType" className="text-lg text-grey-60">Property Type</label>
                         <select className=" bg-grey-10 text-lg laptop:text-base tablet:text-sm rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60 mx-5" value={propertyType} onChange={(e) => setPropertyType(e.target.value)} id="propertyType">
                             <option value="All">All</option>
                             <option value="House">House</option>
                             <option value="Apartment">Apartment</option>
                             <option value="Villa">Villa</option>
                         </select>
-                    </div>
                     <label htmlFor="bedrooms" className="text-lg text-grey-60">Bedrooms</label>
                     <select className="bg-grey-10 text-lg laptop:text-base tablet:text-sm rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60 mx-5" value={minBedrooms} onChange={(e) => setMinBedrooms(e.target.value)} id="bedrooms">
                         <option value="All">All</option>

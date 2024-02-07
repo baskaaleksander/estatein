@@ -5,23 +5,23 @@ const ContactForm = () => {
     const handleSubmit = () => {
     }
   return (
-    <div className="border border-solid border-grey-15 rounded-xl p-24 ">
-        <form className="grid grid-cols-3 gap-12" onSubmit={e => e.preventDefault}>
-            <div>
+    <div className="border border-solid border-grey-15 rounded-xl p-24 navbar:p-12">
+        <form className="grid grid-cols-3 gap-12 navbar:flex navbar:flex-col" onSubmit={e => e.preventDefault}>
+            <div className="flex flex-col">
                 <label htmlFor="firstname" className="text-white-0 text-xl mb-4 laptop:text-lg tablet:text-base mobile:text-sm">First Name</label>
                 <input type="text" id="firsname" className="w-full bg-grey-10 text-xl laptop:text-lg tablet:text-base mobile:text-sm rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60" placeholder="Enter First Name"/>
             </div>
-            <div>
+            <div className="flex flex-col">
                 <label htmlFor="lastname" className="text-white-0 text-xl mb-4 laptop:text-lg tablet:text-base mobile:text-sm">Last Name</label>
                 <input type="text" id="lastname" className="w-full bg-grey-10 text-xl laptop:text-lg tablet:text-base mobile:text-sm rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60" placeholder="Enter Last Name"/>
             </div>
-            <div>
+            <div className="flex flex-col">
                 <label htmlFor="email" className="text-white-0 text-xl mb-4 laptop:text-lg tablet:text-base mobile:text-sm">Email</label>
                 <input type="email" id="email" className="w-full bg-grey-10 text-xl laptop:text-lg tablet:text-base mobile:text-sm rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60" placeholder="Enter Email"/>
             </div>
-            <div>
+            <div className="flex flex-col">
                 <label htmlFor="phone" className="text-white-0 text-xl mb-4 laptop:text-lg tablet:text-base mobile:text-sm">Phone</label>
-                <input type="tel" id="phone" className="w-full bg-grey-10 text-lg rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60" placeholder="Enter Phone"/>
+                <input type="tel" id="phone" className="w-full bg-grey-10 text-lg rounded-lg p-6 tablet:text-base mobile:text-sm text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60" placeholder="Enter Phone"/>
             </div>
             <div className="flex flex-col">
                 <label htmlFor="inquiryType" className="text-white-0 text-xl mb-4 laptop:text-lg tablet:text-base mobile:text-sm">Inquiry Type</label>
@@ -41,12 +41,12 @@ const ContactForm = () => {
                     <option value="Villa">Press</option>
                 </select>
             </div>
-            <div className="col-span-3">
-                <label htmlFor="messagearea" className="text-white-0 text-xl laptop:text-lg tablet:text-base mobile:text-sm mb-4 laptop:text-lg tablet:text-base mobile:text-sm">Message</label>
-                <textarea name="" id="messagearea" className="w-full bg-grey-10 text-xl rounded-lg p-6 text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60 resize-none" placeholder="Enter your message"></textarea>
+            <div className="col-span-3 navbar:grid-cols-1 flex flex-col">
+                <label htmlFor="messagearea" className="text-white-0 text-xl laptop:text-lg tablet:text-base mobile:text-sm mb-4">Message</label>
+                <textarea name="" id="messagearea" className="w-full bg-grey-10 text-xl rounded-lg p-6 tablet:text-base mobile:text-sm text-grey-40 border border-solid border-grey-15 outline-none focus-within:border-purple-60 resize-none" placeholder="Enter your message"></textarea>
             </div>
-            <div className="col-span-3 flex justify-between">
-                <div>
+            <div className="col-span-3 flex justify-between navbar:flex navbar:flex-col">
+                <div className="navbar:pb-5">
                     <input type="checkbox" id="terms" className="mr-4"/>
                     <label htmlFor="terms" className="text-grey-60 text-lg laptop:text-base tablet:text-sm">I agree to the terms and conditions</label>
                 </div>

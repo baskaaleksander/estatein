@@ -12,8 +12,8 @@ const PropertyDetailsCarousel = ({photos} : { photos: string[] }) => {
     });
 
     return (
-        <div className="p-12 border border-solid border-grey-15 rounded-xl flex flex-col">
-            <div className="grid grid-cols-3 gap-5 p-3 bg-grey-10 border border-solid border-grey-15 rounded-lg">
+        <div className="p-12 mobile:p-6 border border-solid border-grey-15 rounded-xl flex flex-col aspect-auto h-fit">
+            <div className="grid grid-cols-3 gap-5 p-3 bg-grey-10 border border-solid border-grey-15 rounded-lg mobile:hidden">
                 {everyPhoto}
             </div>
             <img className="py-8 rounded-3xl" src={photos[currentPhoto]} alt="" />

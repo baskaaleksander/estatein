@@ -10,7 +10,7 @@ const TotalInitialCost = ({listingprice, downpayment, additionalfees, mortgagefe
   return (
     <div className="border border-solid border-grey-15 rounded-xl p-12 mb-12">
         <h3 className="pb-8 text-2xl font-semibold laptop:text-xl tablet:text-lg">Total Initial Cost</h3>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 navbar:grid-cols-1">
         <div className="border-t border-solid border-grey-15 py-8">
           <p className="mb-3 text-grey-60 text-lg laptop:text-base mobile:text-sm">Listing Price</p>
           <p className="text-xl mr-3 text-white-0 laptop:text-lg mobile:text-base">${listingprice}</p>

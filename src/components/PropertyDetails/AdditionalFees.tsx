@@ -10,7 +10,7 @@ const AdditionalFees = ({transfertax, legalfees, homeinspection, insurance} : Ad
   return (
     <div className="p-12 border border-solid border-grey-15 rounded-xl">
         <h3 className="pb-8 text-2xl font-semibold laptop:text-xl tablet:text-lg">Additional Fees</h3>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 navbar:grid-cols-1">
           <div className="py-8 border-t border-solid border-grey-15">
             <p className="mb-3 text-grey-60 text-lg laptop:text-base mobile:text-sm">Property Transfer Tax</p>
             <div className="flex items-center">

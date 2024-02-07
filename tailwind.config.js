@@ -9,7 +9,9 @@ export default {
     screens: {
       'laptop': {'max': '1920px'},
       'tablet': {'max': '1024px'},
+      'navbar': {'max': '968px'},
       'mobile': {'max': '768px'},
+      'card-bp': {'max': '1250px'},
     },
     colors: {
       'purple-60': '#703BF7',

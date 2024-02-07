@@ -25,13 +25,13 @@ const FeaturedCard = ({title, description, image, price, bathrooms, bedrooms, ty
         <h3 className="text-2xl font-semibold laptop:text-xl tablet:text-lg">{title}</h3>
         <p className="text-lg text-grey-60 laptop:text-base tablet:text-sm">{description}</p>
       </div>
-      <div className='flex my-8 laptop:grid laptop:grid-cols-2 laptop:gap-4'>
+      <div className='flex my-8 laptop:grid laptop:grid-cols-2 laptop:gap-4 card-bp:grid-cols-1'>
         <Badge icon={bedroomicon} text={`${bedrooms}-Bedroom`} />
         <Badge icon={bathroomicon} text={`${bathrooms}-Bathroom`} />
         <Badge icon={typeicon} text={type} />
       </div>
       
-      <div className='grid grid-cols-2'>
+      <div className='grid grid-cols-2 card-bp:grid-cols-1'>
         <div>
           <p className='text-base text-grey-60 laptop:text-sm'>Price</p>
           <p className="text-2xl laptop:text-xl tablet:text-lg">${price}</p>

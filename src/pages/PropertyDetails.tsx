@@ -6,7 +6,7 @@ import KeyFeatures from '../components/KeyFeatures';
 import Badge from '../components/ui/Badge';
 import PropertyDescription from '../components/PropertyDescription';
 import PricingDetails from '../components/PricingDetails';
-import ContactForm from '../components/ui/ContactForm';
+import ContactComponent from '../components/ContactComponent';
 
 const PropertyDetails = () => {
   const {id} = useParams();
@@ -20,8 +20,8 @@ const PropertyDetails = () => {
   return (
 
     <div className='px-[10%] bg-grey-08 py-20  text-white-0'>
-      <div className='flex justify-between items-center'>
-        <div className='flex items-center'>
+      <div className='flex justify-between items-center mobile:flex-col'>
+        <div className='flex items-center  mobile:flex-col'>
       <h2 className='text-3xl mr-2 font-semibold laptop:text-2xl tablet:text-xl mobile:text-lg'>{property.title}</h2>
       <Badge text={property.location} />
       </div>
@@ -30,14 +30,14 @@ const PropertyDetails = () => {
         <p className='text-2xl laptop:text-xl tablet:text-lg mobile:text-base'>${property.price}</p>
       </div>
       </div>
-      <div className='grid grid-cols-2 gap-5 py-14'>
+      <div className='grid grid-cols-2 gap-5 py-14 card-bp:flex card-bp:flex-col-reverse'>
       <div>
         <PropertyDescription description={property.description} bedrooms={property.bedrooms} bathrooms={property.bathrooms} area={property.area}/>
         <KeyFeatures features={property.keyfeatures}/>
       </div>
       <PropertyDetailsCarousel photos={property.images}/>
       </div>
-        <ContactForm />
+        <ContactComponent />
         <PricingDetails 
           transfertax={property.costs.transfertax} 
           legalfees={property.costs.legalfees} 
