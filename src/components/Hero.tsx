@@ -1,4 +1,3 @@
-import React from 'react'
 import heroimg from '../assets/heroimg.png'
 import { useNavigate } from 'react-router-dom';
 import Button from './ui/Button';

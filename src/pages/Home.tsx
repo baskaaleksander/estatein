@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../components/Hero'
 import Pros from '../components/Pros'
 import FeaturedProperties from '../components/FeaturedProperties'
