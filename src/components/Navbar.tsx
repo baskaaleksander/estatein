@@ -1,15 +1,34 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../assets/Logo.svg'
 import { NavLink, useNavigate } from 'react-router-dom'
 import Button from './ui/Button';
 import useScreenSize from '../hooks/useScreenSize'
 
 const NavbarMobile: React.FC = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    const throttleScroll = () => {
+      requestAnimationFrame(handleScroll);
+    };
+
+    window.addEventListener('scroll', throttleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', throttleScroll);
+    };
+  }, []);
+
   return (
-    <nav>
-      <div className='w-full flex justify-between items-center bg-grey-10 px-[10%] py-5'>
+    <nav className={`sticky top-0 ${scrollPosition > 100 && "bg-grey-10"}`}>
+      <div className='w-full flex justify-between items-center bg-grey-08 px-[10%] py-5 '>
         <img onClick={() => navigate('/')} src={logo} alt="logo" />
         <button className='text-white-0 text-3xl' onClick={() => setIsOpen(open => !open)}>&#9776;</button>
       </div>
@@ -29,9 +48,27 @@ const NavbarMobile: React.FC = () => {
 }
 
 const NavbarNormal: React.FC = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    const throttleScroll = () => {
+      requestAnimationFrame(handleScroll);
+    };
+
+    window.addEventListener('scroll', throttleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', throttleScroll);
+    };
+  }, []);
+  
   const navigate = useNavigate();
   return (
-    <nav className='w-full flex justify-between items-center bg-grey-10 px-[10%]'>
+    <nav className={`w-full flex justify-between items-center bg-grey-08 px-[10%] sticky top-0 z-50 ${scrollPosition > 100 && "bg-grey-10"}`}>
         <img src={logo} alt="logo" />
         <ul className='flex '>
             <li className='p-8 active:px-0'><NavLink className='text-white-0 hover:text-purple-60 active:px-6 active:py-4 active:bg-grey-10 active:rounded-xl active:border active:border-solid active:border-grey-15' to="/">Home</NavLink></li>
