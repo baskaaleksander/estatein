@@ -16,6 +16,6 @@
 <h2>Screenshots</h2>
 
 <div align='center'>
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/86Qrq4b"  ><a href="//imgur.com/a/86Qrq4b">estatein</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/Yz21BuF" data-context="false" ><a href="//imgur.com/a/Yz21BuF"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src='https://i.imgur.com/mTKqL3O.png' />
+<img src='https://i.imgur.com/Pq08mL8.png' />
 </div>
