@@ -5,6 +5,7 @@ interface Testimonial {
     text: string;
     location: string;
     stars: number;
+    id: number;
 }
 
 export const testimonials: Testimonial[] = [
@@ -14,7 +15,8 @@ export const testimonials: Testimonial[] = [
         title: "Lorem ipsum dolor sit amet, consecte",
         text: "Lorem ipsum dolor sit amet, consecte",
         location: "Warszawa",
-        stars: 5
+        stars: 5,
+        id: 1
     },
     {
         name: "Jan Kowalski",
@@ -22,7 +24,8 @@ export const testimonials: Testimonial[] = [
         title: "Lorem ipsum dolor sit amet, consecte",
         text: "Lorem ipsum dolor sit amet, consecte",
         location: "Warszawa",
-        stars: 5
+        stars: 5,
+        id: 2
     },
     {
         name: "Jan Kowalski",
@@ -30,7 +33,8 @@ export const testimonials: Testimonial[] = [
         title: "Lorem ipsum dolor sit amet, consecte",
         text: "Lorem ipsum dolor sit amet, consecte",
         location: "Warszawa",
-        stars: 5
+        stars: 5,
+        id: 3
     },
     {
         name: "Jan Kowalski",
@@ -38,7 +42,8 @@ export const testimonials: Testimonial[] = [
         title: "Lorem ipsum dolor sit amet, consecte",
         text: "Lorem ipsum dolor sit amet, consecte",
         location: "Warszawa",
-        stars: 5
+        stars: 5,
+        id: 4
     },
     {
         name: "Jan Kowalski",
@@ -46,7 +51,8 @@ export const testimonials: Testimonial[] = [
         title: "Lorem ipsum dolor sit amet, consecte",
         text: "Lorem ipsum dolor sit amet, consecte",
         location: "Warszawa",
-        stars: 5
+        stars: 5,
+        id: 5
     },
     {
         name: "Jan Kowalski",
@@ -54,6 +60,7 @@ export const testimonials: Testimonial[] = [
         title: "Lorem ipsum dolor sit amet, consecte",
         text: "Lorem ipsum dolor sit amet, consecte",
         location: "Warszawa",
-        stars: 5
+        stars: 5,
+        id: 6
     },
 ];

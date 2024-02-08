@@ -13,6 +13,7 @@ interface Testimonial {
     location: string;
     stars: number;
     title: string;
+    id: number;
 }
 const Testimonials = () => {
     const screenSize = useScreenSize();
@@ -29,10 +30,10 @@ const TestimonialsMobile = () => {
         setCards(testimonials.slice(display, display + 1))
     }, [display])
     
-    const contentArray = cards.map((card, index) => {
+    const contentArray = cards.map((card) => {
         return (
             <TestimonialCard
-                key={index}
+                key={card.id}
                 title={card.title}
                 name={card.name}
                 img={card.img}
@@ -70,10 +71,10 @@ useEffect(() => {
     setCards(testimonials.slice(display * 3, (display * 3) + 3))
 }, [display])
 
-const contentArray = cards.map((card, index) => {
+const contentArray = cards.map((card) => {
     return (
         <TestimonialCard
-            key={index}
+            key={card.id}
             title={card.title}
             name={card.name}
             img={card.img}

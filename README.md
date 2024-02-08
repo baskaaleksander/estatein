@@ -11,6 +11,7 @@
     <li>TypeScript</li>
     <li>Tailwind CSS</li>
     <li>React Router DOM</li>
+    <li>Framer Motion</li>
 </ul>
 
 <h2>Screenshots</h2>
@@ -20,4 +21,4 @@
 <img src='https://i.imgur.com/Pq08mL8.png' />
 </div>
 
-<p>Credits for design for <a href='https://www.figma.com/@produce_ui'>Produce UI</a></p>
+<p>Credits for design to <a href='https://www.figma.com/@produce_ui'>Produce UI</a></p>

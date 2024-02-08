@@ -35,7 +35,7 @@ const FeaturedPropertiesMobile: React.FC = () => {
     setCards(listings.slice(display, display + 1))
   }, [display])
 
-  const contentArray = cards.map((card, index) => {
+  const contentArray = cards.map((card) => {
     return (
       <FeaturedCard
         title={card.title}
@@ -45,9 +45,10 @@ const FeaturedPropertiesMobile: React.FC = () => {
         bathrooms={card.bathrooms}
         bedrooms={card.bedrooms}
         type={card.type}
-        key={index}
+        key={card.id}
         link={`/properties/${card.id}`}
       />
+
     )
   })
 
@@ -84,7 +85,7 @@ const FeaturedPropertiesNormal: React.FC = () => {
   useEffect(() => {
     setCards(listings.slice(display * 3, (display * 3) + 3))
   }, [display])
-  const contentArray = cards.map((card, index) => {
+  const contentArray = cards.map((card) => {
     return (
       <FeaturedCard
         title={card.title}
@@ -94,7 +95,7 @@ const FeaturedPropertiesNormal: React.FC = () => {
         bathrooms={card.bathrooms}
         bedrooms={card.bedrooms}
         type={card.type}
-        key={index}
+        key={card.id}
         link={`/properties/${card.id}`}
       />
     )
