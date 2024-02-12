@@ -23,10 +23,10 @@ const Footer: React.FC = () => {
             </div>
             <ul className='flex'>
               <li className='text-grey-60 hover:text-purple-60 mr-3 text-center text-lg laptop:text-base'><Link to="/">Home</Link></li>
-              <li className='text-grey-60 hover:text-purple-60 mr-3 text-lg laptop:text-base text-center'><Link to="/about">About Us</Link></li>
+              <li className='text-grey-60 hover:text-purple-60 mr-3 text-lg laptop:text-base text-center'><Link className="whitespace-nowrap overflow-hidden" to="/about">About Us</Link></li>
               <li className='text-grey-60 hover:text-purple-60 mr-3 text-lg laptop:text-base text-center'><Link to="/properties">Properties</Link></li>
               <li className='text-grey-60 hover:text-purple-60 mr-3 text-lg laptop:text-base text-center'><Link to="/services">Services</Link></li>
-              <li className='text-grey-60 hover:text-purple-60 text-lg laptop:text-base text-center'><Link to="/about">Contact Us</Link></li>
+              <li className='text-grey-60 hover:text-purple-60 text-lg laptop:text-base text-center '><Link className="whitespace-nowrap overflow-hidden" to="/about">Contact Us</Link></li>
             </ul>
         </div>
         <div className='bg-grey-10 px-[10%] py-4 flex justify-between items-center mobile:flex-col'>
