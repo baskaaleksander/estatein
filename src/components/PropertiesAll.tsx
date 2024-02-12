@@ -5,8 +5,8 @@ import FeaturedCard from "./FeaturedCard";
 const PropertiesAll = () => {
     const [search, setSearch] = useState("");
     const [propertyType, setPropertyType] = useState<string>("All");
-    const [minBedrooms, setMinBedrooms] = useState("All");
-    const [minBathrooms, setMinBathrooms] = useState("All");
+    const [minBedrooms, setMinBedrooms] = useState<string>("All");
+    const [minBathrooms, setMinBathrooms] = useState<string>("All");
 
     const filteredListings = listings.filter((listing) => {
         const isMatchingSearch = listing.location.toLowerCase().includes(search.toLowerCase());

@@ -38,13 +38,7 @@ const FeaturedPropertiesMobile: React.FC = () => {
   const contentArray = cards.map((card) => {
     return (
       <FeaturedCard
-        title={card.title}
-        description={card.description}
-        image={card.image}
-        price={card.price}
-        bathrooms={card.bathrooms}
-        bedrooms={card.bedrooms}
-        type={card.type}
+        {...card}
         key={card.id}
         link={`/properties/${card.id}`}
       />
@@ -88,13 +82,7 @@ const FeaturedPropertiesNormal: React.FC = () => {
   const contentArray = cards.map((card) => {
     return (
       <FeaturedCard
-        title={card.title}
-        description={card.description}
-        image={card.image}
-        price={card.price}
-        bathrooms={card.bathrooms}
-        bedrooms={card.bedrooms}
-        type={card.type}
+        {...card} 
         key={card.id}
         link={`/properties/${card.id}`}
       />
